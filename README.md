@@ -76,7 +76,7 @@ który będzie obsługiwał następujące przypadki użycia.
 
 2. Napisz klasę "opakowującą" dla tablicy stringów, która będzie zachowywać się jak
 konkretne na dane. Klasa ta powinna posiadać wygodne konstruktory, które pozwalają na
- tworzenie takiej klasy oraz metody pozwalające na dodawanie/usupełnianie/modyfikowanie wartości w takiej tablicy.
+ tworzenie obiktów takiej klasy oraz metody pozwalające na dodawanie/modyfikowanie/usuwanie/wyświetlanie wartości w takiej tablicy.
  
 #### Pozostałe zadania
 Pozostałe zadania znajdują się w folderze 'zadania'

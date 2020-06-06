@@ -9,7 +9,6 @@ public class CharConsoleGraph {
         for (int i = start; i < end; i++) {
             printLetterGraphLine((char) i, i);
         }
-
     }
 
     private static void printLetterGraphLine(char letter, int occurences){

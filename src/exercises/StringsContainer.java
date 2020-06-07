@@ -36,8 +36,25 @@ public class StringsContainer {
 
 
     public void remove(int index) {
-        //usuwanie elemntu z tablicy na indexie i przepisanie "do nowej" tablicy
 
+        String[] resultArray = new String[this.data.length - 1];
+        if (index < 0 || index >= this.data.length) {
+            System.out.println("Błąd");
+
+        } else {
+
+            for (int i = 0; i < this.data.length; i++) {
+
+                if (i < index) {
+                    resultArray[i] = this.data[i];
+                }
+                if (i > index) {
+                    resultArray[i - 1] = this.data[i];
+                }
+            }
+        }
+
+        this.data = resultArray;
     }
 
     public void swap(int left, int right) {

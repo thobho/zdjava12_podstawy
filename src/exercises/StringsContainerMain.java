@@ -5,9 +5,15 @@ public class StringsContainerMain {
 
     public static void main(String[] args) {
 
-        StringsContainer stringsContainer = new StringsContainer();
+        String[] test = {"Ala ", "ma ", "kota"};
 
-        stringsContainer.set("Test", 0);
+        StringsContainer stringsContainer = new StringsContainer(test);
+
+        stringsContainer.remove(0);
+
+        System.out.println(stringsContainer);
+
+
     }
 
 

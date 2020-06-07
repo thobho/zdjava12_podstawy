@@ -13,7 +13,8 @@ public class StringsContainerMain {
 
     static int[] removeFromArray(int[] oldArray, int index) {
         //1. Zrobienie nowej, "krótszej" tablicy.
-
+        //2. Przepisanie tablicy
+        //3. Zwrócenie tablicy
         if (index < 0 || index >= oldArray.length) {
             System.out.println("nieprawidłowy index");
             return new int[0];

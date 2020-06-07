@@ -3,22 +3,31 @@ package exercises;
 public class StringsContainer {
 
     //stan, pola klasy
-
     private String[] data;
 
     //konstruktor
     public StringsContainer(String[] initialData) {
+        //komentarz
         this.data = initialData;
     }
 
-    public void set(String newData, int index){
-        //ustawia newData na jakimś indexie index
+    public StringsContainer() {
+        this.data = new String[0];
+    }
 
-        data[index] = newData;
+    public void set(String newData, int index) {
+        //ustawia newData na jakimś indexie index
+        if (index < 0 || index >= this.data.length) {
+            System.out.println("Nieprawidłowe dane");
+            System.out.println("Nie można ustawić elementu na index: " + index);
+            System.out.println("Tablica ma " + this.data.length + " elementów");
+        } else {
+            this.data[index] = newData;
+        }
 
     }
 
-    public void add(String newData){
+    public void add(String newData) {
         //dodawninie nowej wartości na końcu tablicy
         //1. Stworzyć nową (dłuższą tablicę)
         //2. Przepisać "stare" dane do "nowej" tablicy
@@ -26,15 +35,16 @@ public class StringsContainer {
     }
 
 
-    public void remove(int index){
+    public void remove(int index) {
         //usuwanie elemntu z tablicy na indexie i przepisanie "do nowej" tablicy
+
     }
 
-    public void swap(int left, int right){
+    public void swap(int left, int right) {
         //swapowanie (zamienianie elementów miejscami)
     }
 
-    public void bubbleSort(){
+    public void bubbleSort() {
         int czyAAAjestMniejszeOdBBB = "aaa".compareTo("bbb");
     }
 

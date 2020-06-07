@@ -5,21 +5,37 @@ public class StringsContainerMain {
 
     public static void main(String[] args) {
 
-        String[] testData = {"Ala", "ma", "kota"};
+        StringsContainer stringsContainer = new StringsContainer();
 
-        StringsContainer poem = new StringsContainer(testData);
-
-        poem.set("nie ma", 3);
-
-        poem.add("A kot ma alę");
-
-        poem.remove(2);
-
-        poem.bubbleSort();
-
-        System.out.println(poem);
-
+        stringsContainer.set("Test", 0);
     }
+
+
+    static int[] removeFromArray(int[] oldArray, int index) {
+        //1. Zrobienie nowej, "krótszej" tablicy.
+
+        if (index < 0 || index >= oldArray.length) {
+            System.out.println("nieprawidłowy index");
+            return new int[0];
+        } else {
+
+            int[] resultArray = new int[oldArray.length - 1];
+
+            for (int i = 0; i < oldArray.length; i++) {
+
+                if (i < index){
+                    resultArray[i] = oldArray[i];
+                } else if(i == index){
+                  //nic nie robimy
+                } else {
+                    resultArray[i - 1] = oldArray[i];
+                }
+            }
+
+            return resultArray;
+        }
+    }
+
 
     int[] addNewIntToArray(int newInt, int[] array) {
         int[] resultArray = new int[array.length + 1];
@@ -33,24 +49,6 @@ public class StringsContainerMain {
         return resultArray;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

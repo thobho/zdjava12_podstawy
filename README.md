@@ -8,8 +8,8 @@ markdown
 2. Zmienne, typy danych (prymitywne, referencyjne), konwersje między typami 
 3. Operatory (przypisania, arytmetyczne, logiczne, relacji)
 4. instrukcje sterujące
-    * if
-    * switch
+    * if/else
+    * switch/case/default
     * (warunek) ? <<true_value>> : <<false_value>>
 5. Pętle
     * for
@@ -51,7 +51,7 @@ markdown
 3. Zaimplementuj algorytm "sito Erastotenesa" do wyszukiwania liczb pierwszych
 4. Zaimplementuj metodę "swap", która zaminie w tablicy wartości spod 2 zadanych indeksów. ([1,2,3,4,5], 1, 2) -> [1,3,2,4,5] 
 5. Zaimplementuj algorytm sortujący tablicę intów za pomocą sortowania bąbelkowego
-6. Wyznacz liczbę PI za pomocą algorytmu Monte-Carlo.
+6. Wyznacz liczbę PI za pomocą algorytmu Monte-Carlo. (http://wazniak.mimuw.edu.pl/images/4/4a/Pr-1st-1.1-m06-lab.pdf)
 7. Napisz program, który sprawdzi, czy liczba jest palindromem. [Wiki](https://en.wikipedia.org/wiki/Palindromic_number)
 8. Napisz program, który "odwróci" stringa np. napis "pies" -> "seip"
 9. Napisz kalkulator, który może dodawać/odejmować/mnożyć/dzielić dowolnie wielkie liczby.
@@ -68,9 +68,11 @@ który będzie obsługiwał następujące przypadki użycia.
 * Bibliotekarz może usunąć książkę ze zbioru
 * Bibliotekarz może wyświetlić listę wszystkich książek w bibliotece
 * Bibliotekarz może wyszukać książkę po tytule lub autorze
+
 * Bibliotekarz może zarejestrować czytelnika
 * Bibliotekarz może "zarezerować" książkę dla czytelnika
 * Bibliotekarz może "wypożyczyć" książkę dla czytelnika
+
 * Bibliotekarz może wyświetlić wypożyczenia i rezerwacje czytelnika
 * Bibliotekarz może oznaczyć, że książka została oddana przez czytelnika 
 
@@ -80,5 +82,12 @@ konkretne na dane. Klasa ta powinna posiadać wygodne konstruktory, które pozwa
  
 #### Pozostałe zadania
 Pozostałe zadania znajdują się w folderze 'zadania'
+
+
+6. Dla zadanej tablicy intów policz ile jest w niej liczb ujemnych. Jeśli takie występują
+utwórz nową tablicę, do której przepisze tylko te ujemne liczby
+7. Napisz funkcję tworzącą ciąg arytmetyczny o podanych: długości, pierwszym elemencie,
+różnicy ciągu
+8. Sprawdź, czy podany ciąg liczb jest ciągiem arytmetycznym
 
 
